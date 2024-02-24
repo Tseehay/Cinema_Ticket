@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cinema Main Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px; 
+        text-align: center;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 0 20px;
+      }
+
+      .search-container {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .search-container input[type="text"] {
+        padding: 10px;
+        width: 50%;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+        box-sizing: border-box;
+      }
+
+      .image-partition {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .image-partition img {
+        width: 200px;
+        height: auto;
+        margin: 10px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+        text-align: center;
+      }
+      .searchBtn {
+            background-color: #007bff; 
+            color: #fff; 
+            border: none; 
+            padding: 10px 20px; 
+            font-size: 16px; 
+            cursor: pointer; 
+        }
+        header{
+            display:flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .logout{
+            padding: 10px 15px;
+            background: black;
+            border-radius: 15px;
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+        <div>
+            <h1>Welcome to Cinema Site</h1>
+        </div>
+        <div>
+            <a class="logout" href="login.html">LogOut</a>
+        </div>
+    </header>
+    <div class="container">
+      <div class="search-container">
+        <form method="get">
+             <input type="text" name="search" placeholder="Search movies..." />
+             <a href="#" class="searchBtn">Search</a>
+        </form>
+    </div>
+       
+        <h1 class="mt-3">COMING SOON MOVIES</h1>
+      <div class="image-partition">
+        <a href="booking.html" class="image">
+          <img src="imgs/photo_9_2024-02-18_00-09-10.jpg" alt="Movie 1" />
+        </a>
+        <a href="booking.html">
+          <img src="imgs/photo_10_2024-02-18_00-09-10.jpg" alt="Movie 2" />
+        </a>
+        <a href="booking.html">
+          <img src="imgs/photo_11_2024-02-18_00-09-10.jpg" alt="Movie 3" />
+        </a>
+        <a href="booking.html">
+          <img src="imgs/photo_12_2024-02-18_00-09-10.jpg" alt="Movie 4" />
+        </a>
+        <a href="booking.html">
+          <img src="imgs/photo_1_2024-02-18_00-09-10.jpg" alt="Movie 5" />
+        </a>
+        <a href="booking.html">
+          <img src="imgs/photo_2_2024-02-18_00-09-10.jpg" alt="Movie 6" />
+        </a>
+        <a href="booking.html">
+          <img src="imgs/photo_3_2024-02-18_00-09-10.jpg" alt="Movie 7" />
+        </a>
+        <a href="booking.html">
+          <img src="imgs/photo_4_2024-02-18_00-09-10.jpg" alt="Movie 8" />
+        </a>
+        <a href="booking.html">
+          <img src="imgs/photo_5_2024-02-18_00-09-10.jpg" alt="Movie 9" />
+        </a>
+        <a href="booking.html">
+          <img src="imgs/photo_6_2024-02-18_00-09-10.jpg" alt="Movie 10" />
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

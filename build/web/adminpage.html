@@ -1,0 +1,233 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Admin page</title>
+    <!-- Bootstrap CSS -->
+    <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+        body {
+            background-color: #cfd9df;
+            width: 100%;
+            height: 100vh;
+        }
+        .head{
+            padding: 10px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .logout{
+            background: #000;
+            padding: 10px 15px;
+            border-radius: 15px;
+            color: #fff;
+        }         
+        .logout:hover{
+            text-decoration: none;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <p>
+         <h1 class="text-center mt-3 ">Welcome Admin</h1>
+        <p>
+        <div>
+            <a class="logout" href="login.html">logOut</a>
+        </div>
+    </div>
+<div class="container movie-form-container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card border-rad">
+                        <div class="card-header border-rad-head bg-success">
+                            <h3 class="text-center">Add Movie</h3>
+                        </div>
+                        <div class="card-body">
+                            <form method="post" action="addMovie">
+                               <div class="form-group">
+                    <label>Movie Name:</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="movieName"
+                      placeholder="Enter movie name"
+                      required
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label>Price:</label>
+                    <div class="input-group">
+                      <div class="input-group-prepend"></div>
+                      <input
+                        type="number"
+                        class="form-control"
+                        name="price"
+                        placeholder="Enter price"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label>Date and Time:</label>
+                    <input
+                      type="datetime-local"
+                      class="form-control"
+                      name="DateAndTime"
+                      required
+                    />
+                  </div>
+
+                  <button
+                    type="submit"
+                    name="add"
+                    class="btn btn-primary btn-block"
+                  >
+                    Add Movie
+                  </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12 mt-2">
+                    <div class="card border-rad">
+                        <div class="card-header border-rad  bg-success">
+                            <h3 class="text-center">Update Movie</h3>
+                        </div>
+                        <div class="card-body">
+                            <form method="post" action="updateMovie">
+                               <div class="form-group">
+                    <label>Movie Name:</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="movieName"
+                      placeholder="Enter movie name"
+                      required
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label>Price:</label>
+                    <div class="input-group">
+                      <div class="input-group-prepend"></div>
+                      <input
+                        type="number"
+                        class="form-control"
+                        name="price"
+                        placeholder="Enter price"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label>Date and Time:</label>
+                    <input
+                      type="datetime-local"
+                      class="form-control"
+                      name="DateAndTime"
+                      required
+                    />
+                  </div>
+                   <div class="form-group">
+                    <label>Movie ID:</label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      name="MovieID"
+                      required
+                    />
+                  </div>
+
+                  <button
+                    type="submit"
+                    name="update"
+                    class="btn btn-primary btn-block"
+                  >
+                    Update Movie
+                  </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card border-rad">
+                        <div class="card-header border-rad  bg-success">
+                            <h3 class="text-center">Delete Movie</h3>
+                        </div>
+                        <div class="card-body">
+                            <form method="post" action="deleteMovie">
+                                 <div class="form-group">
+                                    <label>Movie Name:</label>
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      name="movieName"
+                                      placeholder="Enter movie name"/>
+                                  </div>
+                                  <button
+                                    type="submit"
+                                    name="delete"
+                                    class="btn btn-primary btn-block"
+                                  >
+                                    Delete Movie
+                                  </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12 mt-2">
+                    <div class="card border-rad">
+                        <div class="card-header border-rad  bg-success">
+                            <h3 class="text-center">Delete User</h3>
+                        </div>
+                        <div class="card-body">
+                            <form method="post" action="deleteUser">
+                               <div class="form-group">
+                                   <label>user Name:</label>
+                                   <input
+                                     type="text"
+                                     class="form-control"
+                                     name="userName"
+                                     placeholder="Enter user name"
+                                   />
+                                 </div>
+
+                                 <button
+                                   type="submit"
+                                   name="delete"
+                                   class="btn btn-primary btn-block">
+                                   Delete Movie
+                                 </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cinema Ticket Booking</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    
+  </head>
+  <body>
+    <form action="booking" method="post">
+      <div class="container">
+        <div class="card mx-auto mt-5" style="max-width: 600px">
+          <div class="card-body">
+            <h2 class="text-center mb-4">Movie Ticket Application Form</h2>
+           <img class="img-fluid" src="imgs/pop-corn-icon.jpg" alt="Error">
+            <div class="form-group">
+              <label for="movie">Movie title:</label>
+              <select id="movie" name="movie" class="form-control">
+                <option value="120">AVATAR (120 br)</option>
+                <option value="100">HARRY POTTER (100 br)</option>
+                <option value="80">ONCE UP ON A TIME IN Hollywood(80 br)</option>
+                <option value="130">ALADDIN (130 br)</option>
+                <option value="90">WORLD WAR Z 2 (90 br)</option>
+                <option value="82">MEGAN (82 br)</option>
+                <option value="60">PRATES OF THE CARIBEAN (60 br)</option>
+                <option value="60">MADARI (60 br)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Number of tickets:</label>
+              <input
+                class="form-control"
+                name="amount"
+                type="number"
+                placeholder="The minimum amount must be 1."
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label>Reservation name:</label>
+              <input
+                class="form-control"
+                name="name"
+                type="text"
+                placeholder="Enter your full name"
+                required
+              />
+            </div>
+             <div class="form-group">
+              <label for="movie">Reservation type:</label>
+              <select id="movie" name="place" class="form-control">
+                <option name="VIP">VIP Seat(+20%)</option>
+                <option name="random">Random Seat</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">
+              Submit Form
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+
+  </body>
+</html>
