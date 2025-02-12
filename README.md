@@ -24,7 +24,6 @@
   - Secure payment process  
 
 ## 🛠️ Technology Stack  
-![Tech Stack](img/.png)
 
 - **Frontend:** HTML, CSS, JavaScript  
 - **Backend:** Java (Servlets, JSP, Spring Boot)  
