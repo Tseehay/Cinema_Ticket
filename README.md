@@ -5,7 +5,6 @@
 - **Event Listings**  
   - Landing page with available events
     ![Cinema Ticketing](img/landing.jpg)
-    ![Cinema Ticketing](img/bookhere.jpg)
   - Event details (name, description, date & time, venue name, venue ID, address)
     ![Cinema Ticketing](img/movieinfo.jpg)
     
@@ -21,7 +20,8 @@
     
 - **Booking & Payment**  
   - Seat reservation information  
-  - Secure payment process  
+  - Secure payment process
+    ![Cinema Ticketing](img/bookhere.jpg)
 
 ## 🛠️ Technology Stack  
 
