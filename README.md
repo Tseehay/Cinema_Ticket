@@ -1,17 +1,24 @@
 # 🎟️ Cinema Ticketing System  
 
-![Cinema Ticketing Banner](img/.png)
 
 ## 📌 Features  
-- **User Authentication**  
-  - Sign-up page  
-  - Login page  
-  - Logout option  
-
 - **Event Listings**  
-  - Landing page with available events  
-  - Event details (name, description, date & time, venue name, venue ID, address)  
-
+  - Landing page with available events
+    ![Cinema Ticketing](img/landing.jpg)
+    ![Cinema Ticketing](img/bookhere.jpg)
+  - Event details (name, description, date & time, venue name, venue ID, address)
+    ![Cinema Ticketing](img/movieinfo.jpg)
+    
+- **User Authentication**  
+  - Sign-up page
+    ![Cinema Ticketing](img/signup.jpg) 
+  - Login page
+    ![Cinema Ticketing](img/login.jpg) 
+  - Registration
+    ![Cinema Ticketing](img/registration.jpg)
+  - Admin
+    ![Cinema Ticketing](img/admin.jpg)
+    
 - **Booking & Payment**  
   - Seat reservation information  
   - Secure payment process  
